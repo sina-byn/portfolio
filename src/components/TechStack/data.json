@@ -1,0 +1,26 @@
+[
+  {
+    "name": "javascript",
+    "image": "/js.png"
+  },
+  {
+    "name": "ts",
+    "image": "/js.png"
+  },
+  {
+    "name": "sass",
+    "image": "/js.png"
+  },
+  {
+    "name": "less",
+    "image": "/js.png"
+  },
+  {
+    "name": "sth",
+    "image": "/js.png"
+  },
+  {
+    "name": "nth",
+    "image": "/js.png"
+  }
+]

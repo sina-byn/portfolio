@@ -10,7 +10,7 @@ const Container = ({ className, children }: ContainerProps) => {
   return (
     <div
       className={clsx(
-        'content-container w-full h-full max-w-[1440px] mx-auto',
+        'content-container w-full h-full max-w-[1440px] px-6 mx-auto',
         className
       )}
     >
