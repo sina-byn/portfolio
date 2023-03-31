@@ -3,7 +3,7 @@ import Container from "./Container";
 
 const Header = () => {
     return (
-        <header className="header bg-primary">
+        <header className="header fixed inset-0 z-50 w-screen h-fit bg-primary">
             <Container className="flex justify-between items-center py-4">
                 <img src="/logo.svg" alt="personal logo" className="w-10" />
                 <nav className="space-x-24">
