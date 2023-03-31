@@ -2,6 +2,7 @@
 import Container from './components/Container';
 import Header from './components/Header';
 import TechStack from './components/TechStack';
+import Projects from './components/Projects';
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
       <Header />
       <Container>
         <TechStack />
+        <Projects />
       </Container>
     </main>
   );
