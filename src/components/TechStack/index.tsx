@@ -1,13 +1,33 @@
-import { useRef } from 'react';
+import { createRef, useEffect, useRef, useState } from 'react';
 
-// * data
-import stackData from './data.json';
+// * utils
+import { drawCurve } from '../../helpers/canvasUtils';
 
 // * components
 import TechPill from './TechPill';
 
+// * data
+import stackData from './data.json';
+
 const TechStack = () => {
+  const [curvesDrawn, setCurvesDrawn] = useState<boolean>(false);
+  const [pillRefs] = useState<React.RefObject<HTMLDivElement>[]>(
+    stackData.map(_ => createRef())
+  );
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
+  useEffect(() => {
+    const curveDrawHandler = () => {
+      if (window.innerWidth < 640 || curvesDrawn) return;
+      pillRefs.forEach(pillRef => drawCurve(canvasRef, pillRef));
+      setCurvesDrawn(true);
+    };
+
+    curveDrawHandler();
+    window.addEventListener('resize', curveDrawHandler);
+
+    return () => window.removeEventListener('resize', curveDrawHandler);
+  }, [canvasRef.current]);
 
   return (
     <section className='tech-stack h-fit sm:w-[500px] sm:h-[350px] sm:mt-20 mx-auto'>
@@ -25,12 +45,12 @@ const TechStack = () => {
           className='hidden sm:block absolute inset-0'
         />
         <div className='tech-pills-container grid grid-cols-3 sm:grid-cols-6 justify-items-center gap-4 sm:h-[300px] mb-10 sm:mb-0'>
-          {stackData.map(tech => (
+          {stackData.map((tech, idx) => (
             <TechPill
               key={tech.name}
+              ref={pillRefs[idx]}
               name={tech.name}
               image={tech.image}
-              canvasRef={canvasRef}
             />
           ))}
         </div>
