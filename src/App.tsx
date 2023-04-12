@@ -10,8 +10,8 @@ const App = () => {
   return (
     <main className='app-container'>
       <Header />
-      <Container>
-        <HeroSection />
+      <HeroSection />
+      <Container className='px-6'>
         <TechStack />
         <Projects />
         <Footer />

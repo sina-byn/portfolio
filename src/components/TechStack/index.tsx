@@ -10,7 +10,7 @@ const TechStack = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   return (
-    <section className='tech-stack h-fit sm:w-[500px] sm:h-[350px] mt-32 mx-auto'>
+    <section className='tech-stack h-fit sm:w-[500px] sm:h-[350px] sm:mt-20 mx-auto'>
       <p className='text-xl font-medium text-center mb-6'>
         My experience includes
         <span className='text-primary-light ml-1 font-semibold'>

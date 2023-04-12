@@ -4,7 +4,7 @@ import Container from "./Container";
 const Header = () => {
     return (
         <header className="header fixed inset-0 z-50 w-screen h-fit bg-primary">
-            <Container className="flex justify-between items-center py-4">
+            <Container className="flex justify-between items-center py-4 px-6">
                 <img src="/logo.svg" alt="personal logo" className="w-10" />
                 <nav className="space-x-24">
                     <a href="#home">Home</a>

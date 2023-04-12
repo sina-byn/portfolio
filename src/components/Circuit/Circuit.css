@@ -1,0 +1,28 @@
+.circuit {
+  stroke-dasharray: 583;
+  stroke-dashoffset: 0;
+  animation: circuit-current 2s linear infinite alternate-reverse;
+}
+
+.line {
+  fill: none;
+  stroke: #7127ba;
+  stroke-width: 4px;
+}
+
+.circle {
+  fill: #7127ba;
+}
+
+@-webkit-keyframes circuit-current {
+  to {
+    stroke-dashoffset: 583;
+  }
+}
+
+@keyframes circuit-current {
+  to {
+    stroke-dashoffset: 583;
+  }
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNpcmN1aXQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UscUJBQXFCO0VBQ3JCLG9CQUFvQjtFQUN0QiwrREFBQTtBQUNBOztBQUVBO0VBQ0UsVUFBVTtFQUNWLGVBQWU7RUFDZixpQkFBaUI7QUFDbkI7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7O0FBRUE7RUFDRTtJQUNFLHNCQUFzQjtFQUN4QjtBQUNGOztBQUpBO0VBQ0U7SUFDRSxzQkFBc0I7RUFDeEI7QUFDRiIsImZpbGUiOiJDaXJjdWl0LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5jaXJjdWl0IHtcclxuICBzdHJva2UtZGFzaGFycmF5OiA1ODM7XHJcbiAgc3Ryb2tlLWRhc2hvZmZzZXQ6IDA7XHJcbn1cclxuIl19 */
