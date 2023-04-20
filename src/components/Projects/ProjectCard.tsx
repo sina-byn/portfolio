@@ -34,7 +34,7 @@ const ProjectCard = ({ id, title, image, description }: ProjectCardProps) => {
       </section>
       <figure
         className={clsx(
-          'image-container col-span-6 row-start-1 row-end-7 h-fit bg-purple rounded-md overflow-hidden pt-8',
+          'image-container col-span-6 row-start-1 row-end-7 relative h-fit bg-purple rounded-md pt-8',
           isOdd ? 'col-start-7 pl-14' : 'col-start-1 pr-14'
         )}
       >
@@ -44,6 +44,30 @@ const ProjectCard = ({ id, title, image, description }: ProjectCardProps) => {
           className={clsx(
             'project-image w-full',
             isOdd ? 'rounded-tl-lg' : 'rounded-tr-lg'
+          )}
+        />
+        <div
+          className={clsx(
+            'backdrop-light  bg-radial-gradient absolute -top-1/3 md:-top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            isOdd ? 'sm:right-10' : 'sm:left-10'
+          )}
+        />
+        <div
+          className={clsx(
+            'backdrop-light  bg-radial-gradient absolute -top-1/3 md:-top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            isOdd ? 'sm:right-10' : 'sm:left-10'
+          )}
+        />
+        <div
+          className={clsx(
+            'backdrop-light  bg-radial-gradient absolute top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            isOdd ? 'sm:right-10' : 'sm:left-10'
+          )}
+        />
+        <div
+          className={clsx(
+            'backdrop-light  bg-radial-gradient absolute top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            isOdd ? 'sm:right-10' : 'sm:left-10'
           )}
         />
       </figure>
