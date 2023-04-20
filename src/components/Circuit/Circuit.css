@@ -1,7 +1,7 @@
 .circuit {
   stroke-dasharray: 583;
   stroke-dashoffset: 0;
-  animation: circuit-current 2s linear infinite alternate-reverse;
+  animation: circuit-current 5s linear infinite alternate-reverse;
 }
 
 .line {
