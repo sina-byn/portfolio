@@ -12,7 +12,7 @@ const TechPill = forwardRef<HTMLDivElement, TechPillProps>(
       <div
         ref={ref}
         title={name}
-        className='tech-pill bg-glassy place-items-center grid w-16 h-16 rounded-full'
+        className='tech-pill bg-glassy-secondary place-items-center grid w-16 h-16 rounded-full'
       >
         <img src={image} alt={name} />
       </div>

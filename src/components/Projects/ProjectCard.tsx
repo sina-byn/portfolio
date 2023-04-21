@@ -28,7 +28,7 @@ const ProjectCard = ({ id, title, image, description }: ProjectCardProps) => {
           isOdd ? 'col-start-1' : 'col-start-6'
         )}
       >
-        <p className='description bg-glassy rounded-2xl p-6 shadow-sm'>
+        <p className='description bg-glassy-primary rounded-2xl p-6 shadow-sm'>
           {description}
         </p>
       </section>
