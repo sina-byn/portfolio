@@ -28,7 +28,7 @@ const ProjectCard = ({
       <header
         className={clsx(
           'card-header col-span-7 row-start-1 z-10 font-semibold',
-          isOdd ? 'col-start-1' : 'col-start-6 text-right'
+          isOdd ? 'col-start-1' : 'col-start-6 md:text-right'
         )}
       >
         <span className='text-primary-light'>Featured Project</span>
@@ -37,7 +37,7 @@ const ProjectCard = ({
       <section
         className={clsx(
           'project-details order-last col-start-1 col-span-7 row-start-2 row-end-7 flex flex-col gap-y-3 z-10',
-          isOdd ? 'col-start-1' : 'col-start-6 items-end'
+          isOdd ? 'col-start-1' : 'col-start-6 md:items-end'
         )}
       >
         <p className='description bg-glassy-primary rounded-2xl p-6 shadow-sm'>
@@ -61,8 +61,8 @@ const ProjectCard = ({
       </section>
       <figure
         className={clsx(
-          'image-container col-span-6 row-start-1 row-end-7 relative h-fit bg-purple rounded-md pt-8',
-          isOdd ? 'col-start-7 pl-14' : 'col-start-1 pr-14'
+          'image-container col-span-6 row-start-1 row-end-7 relative h-fit bg-purple rounded-md pt-4 md:pt-8',
+          isOdd ? 'col-start-7 pl-8 md:pl-14' : 'col-start-1 pr-8 md:pr-14'
         )}
       >
         <img
@@ -70,7 +70,9 @@ const ProjectCard = ({
           alt={title}
           className={clsx(
             'project-image w-full',
-            isOdd ? 'rounded-tl-lg rounded-br-lg' : 'rounded-tr-lg rounded-bl-lg'
+            isOdd
+              ? 'rounded-tl-lg rounded-br-lg'
+              : 'rounded-tr-lg rounded-bl-lg'
           )}
         />
         <div
