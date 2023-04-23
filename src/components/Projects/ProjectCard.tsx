@@ -36,8 +36,8 @@ const ProjectCard = ({
       </header>
       <section
         className={clsx(
-          'project-details order-last col-start-1 col-span-7 row-start-2 row-end-7 space-y-3 z-10',
-          isOdd ? 'col-start-1' : 'col-start-6'
+          'project-details order-last col-start-1 col-span-7 row-start-2 row-end-7 flex flex-col gap-y-3 z-10',
+          isOdd ? 'col-start-1' : 'col-start-6 items-end'
         )}
       >
         <p className='description bg-glassy-primary rounded-2xl p-6 shadow-sm'>
@@ -53,7 +53,7 @@ const ProjectCard = ({
             href={url}
             target='_blank'
             rel='noreferrer noopener'
-            className='demo-link inline-block bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
+            className='demo-link w-fit bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
           >
             View Demo
           </a>
@@ -103,4 +103,3 @@ const ProjectCard = ({
 };
 
 export default ProjectCard;
-
