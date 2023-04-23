@@ -1,31 +1,71 @@
 [
   {
     "id": 1,
-    "title": "Example Project",
-    "image": "/sample.png",
+    "title": "Horizon UI Admin Dashboard",
+    "image": "/thumbnails/horizon-ui-dashboard.png",
     "url": "https://horizon-ui-dashboard.vercel.app/",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo illo soluta praesentium nobis amet et in perferendis nam doloribus, quaerat excepturi quia quidem modi porro maiores esse sapiente tempora aperiam qui. Nesciunt minima eaque placeat voluptas at, quae quis beatae commodi! Corrupti non sunt veniam quaerat officiis tempore ducimus necessitatibus earum voluptatem quod repellat soluta, pariatur dolor fuga fugit delectus temporibus impedit, ullam alias illum vero et? Natus, voluptas fugit?",
-    "tags": ["react", "next", "javascript"]
+    "description": "an admin dashboard built based on the free community version of the horizon-ui admin dashboard user interface on figma community including many features such as charts, tables, lists, calendar, marketplace, sign-in form with validation, full-page search, and etc.",
+    "tags": [
+      "react",
+      "typescript",
+      "tailwind-css",
+      "vite",
+      "react-router-dom",
+      "react-hook-form",
+      "recharts",
+      "zod",
+      "react-helmet-async",
+      "postcss"
+    ]
   },
   {
     "id": 2,
-    "title": "Example Project",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo illo soluta praesentium nobis amet et in perferendis nam doloribus, quaerat excepturi quia quidem modi porro maiores esse sapiente tempora aperiam qui. Nesciunt minima eaque placeat voluptas at, quae quis beatae commodi! Corrupti non sunt veniam quaerat officiis tempore ducimus necessitatibus earum voluptatem quod repellat soluta, pariatur dolor fuga fugit delectus temporibus impedit, ullam alias illum vero et? Natus, voluptas fugit?",
-    "image": "/sample.png",
-    "tags": ["react", "next", "javascript"]
+    "title": "Online Code Editor",
+    "image": "/thumbnails/online-code-editor.png",
+    "url": "https://online-code-editor-two.vercel.app/",
+    "description": "an online code editor which supports HTML, Css, and Javascript with features such as built-in javascript console, expandable and resizable text fields, fullscreen mode, and also a live mode so that you can see the results as you code them",
+    "tags": [
+      "react",
+      "typescript",
+      "tailwind-css",
+      "vite",
+      "codemirror",
+      "react-codemirror",
+      "font-awesome icons",
+      "postcss"
+    ]
   },
   {
     "id": 3,
-    "title": "Example Project",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo illo soluta praesentium nobis amet et in perferendis nam doloribus, quaerat excepturi quia quidem modi porro maiores esse sapiente tempora aperiam qui. Nesciunt minima eaque placeat voluptas at, quae quis beatae commodi! Corrupti non sunt veniam quaerat officiis tempore ducimus necessitatibus earum voluptatem quod repellat soluta, pariatur dolor fuga fugit delectus temporibus impedit, ullam alias illum vero et? Natus, voluptas fugit?",
-    "image": "/sample.png",
-    "tags": ["react", "next", "javascript"]
+    "title": "All Things Colors",
+    "image": "/thumbnails/all-things-colors.png",
+    "url": "https://all-things-colors.vercel.app/",
+    "description": "a web application that provides you with different color utility tools to boost your speed and productivity - pre-defined gradients, random gradient generator, tints and shades generator, color palette generator, image palette extractor, and color mixer",
+    "tags": [
+      "react",
+      "next.js",
+      "typescript",
+      "tailwind-css",
+      "react-colorful",
+      "postcss",
+      "autoprefixer"
+    ]
   },
   {
     "id": 4,
-    "title": "Example Project",
-    "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo illo soluta praesentium nobis amet et in perferendis nam doloribus, quaerat excepturi quia quidem modi porro maiores esse sapiente tempora aperiam qui. Nesciunt minima eaque placeat voluptas at, quae quis beatae commodi! Corrupti non sunt veniam quaerat officiis tempore ducimus necessitatibus earum voluptatem quod repellat soluta, pariatur dolor fuga fugit delectus temporibus impedit, ullam alias illum vero et? Natus, voluptas fugit?",
-    "image": "/sample.png",
-    "tags": ["react", "next", "javascript"]
+    "title": "Cryptoify",
+    "image": "/thumbnails/cryptoify.png",
+    "url": "https://cryptoify.vercel.app/",
+    "description": "a web application for you to check more than 300 crypto currencies including a responsive table for all screen sizes and also features like searching coins based on name or id, chart price changes table with different timeframes available, pagination and per-page options, and support for three major currencies (usd, eur, gbp)",
+    "tags": [
+      "react",
+      "next.js",
+      "typescript",
+      "tailwind-css",
+      "axios",
+      "recharts",
+      "postcss",
+      "autoprefixer"
+    ]
   }
 ]
