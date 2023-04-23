@@ -16,8 +16,8 @@ const App = () => {
         <AboutMe />
         <TechStack />
         <Projects />
-        <Footer />
       </Container>
+      <Footer />
     </main>
   );
 };
