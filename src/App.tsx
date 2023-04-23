@@ -5,6 +5,7 @@ import TechStack from './components/TechStack';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import HeroSection from './components/HeroSection';
+import AboutMe from './components/AboutMe';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Header />
       <HeroSection />
       <Container className='px-6'>
+        <AboutMe />
         <TechStack />
         <Projects />
         <Footer />
