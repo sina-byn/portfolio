@@ -17,7 +17,7 @@ const Header = () => {
             'flex sm:inline flex-col gap-y-6',
             'fixed sm:static top-0 right-0 z-50',
             'h-screen sm:h-auto bg-primary transition-transform',
-            'sm:space-x-24 px-16 sm:px-0 pt-10 sm:pt-0',
+            'sm:space-x-20 px-16 sm:px-0 pt-10 sm:pt-0',
             !isMenuOpen && 'translate-x-full sm:translate-x-0'
           )}
         >
@@ -26,6 +26,7 @@ const Header = () => {
             className='close-icon fa-solid fa-close fa-lg sm:hidden cursor-pointer mb-10'
           />
           <a href='#home'>Home</a>
+          <a href='#about-me'>About Me</a>
           <a href='#projects'>Projects</a>
           <a href='#contact'>Contact</a>
         </nav>
