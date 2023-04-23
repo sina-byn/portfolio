@@ -69,8 +69,8 @@ const ProjectCard = ({
           src={image}
           alt={title}
           className={clsx(
-            'project-image h-[340px]',
-            isOdd ? 'rounded-tl-lg' : 'rounded-tr-lg'
+            'project-image w-full',
+            isOdd ? 'rounded-tl-lg rounded-br-lg' : 'rounded-tr-lg rounded-bl-lg'
           )}
         />
         <div
