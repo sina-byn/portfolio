@@ -62,7 +62,7 @@ const ProjectCard = ({
       <figure
         className={clsx(
           'image-container col-span-6 row-start-1 row-end-7 relative h-fit bg-purple rounded-md pt-4 md:pt-8',
-          isOdd ? 'col-start-7 pl-8 md:pl-14' : 'col-start-1 pr-8 md:pr-14'
+          isOdd ? 'col-start-7 pl-4 md:pl-10 lg:pl-14' : 'col-start-1 pr-4 md:pr-10 lg:pr-14'
         )}
       >
         <img

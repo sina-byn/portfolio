@@ -7,7 +7,7 @@ const HeroSection = () => {
     <Container>
       <section
         id='home'
-        className='hero-section grid sm:flex grid-rows-2 grid-cols-2 gap-x-10 sm:items-center pt-24 sm:pl-6 mb-16 sm:mb-0'
+        className='hero-section grid sm:flex grid-rows-2 grid-cols-2 gap-x-10 sm:items-center pt-24 sm:pl-6'
       >
         <figure className='image-container col-span-2 grid place-items-center min-w-[280px] w-2/4 sm:w-80 sm:h-96 relative bg-radial-gradient mx-auto sm:mx-0'>
           <img
