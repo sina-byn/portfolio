@@ -1,14 +1,26 @@
 import clsx from 'clsx';
 
+// * components
+import Tag from './Tag';
+
 // * types
 type ProjectCardProps = {
   id: number;
   title: string;
+  url?: string;
   image: string;
   description: string;
+  tags: string[];
 };
 
-const ProjectCard = ({ id, title, image, description }: ProjectCardProps) => {
+const ProjectCard = ({
+  id,
+  title,
+  url,
+  image,
+  description,
+  tags,
+}: ProjectCardProps) => {
   const isOdd = id % 2 === 1;
 
   return (
@@ -24,13 +36,28 @@ const ProjectCard = ({ id, title, image, description }: ProjectCardProps) => {
       </header>
       <section
         className={clsx(
-          'project-details order-last col-start-1 col-span-7 row-start-2 row-end-7 z-10',
+          'project-details order-last col-start-1 col-span-7 row-start-2 row-end-7 space-y-3 z-10',
           isOdd ? 'col-start-1' : 'col-start-6'
         )}
       >
         <p className='description bg-glassy-primary rounded-2xl p-6 shadow-sm'>
           {description}
         </p>
+        <div className='tags flex flex-wrap gap-2'>
+          {tags.map(tag => (
+            <Tag key={tag} title={tag} />
+          ))}
+        </div>
+        {url !== undefined && url.length > 0 && (
+          <a
+            href={url}
+            target='_blank'
+            rel='noreferrer noopener'
+            className='demo-link inline-block bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
+          >
+            View Demo
+          </a>
+        )}
       </section>
       <figure
         className={clsx(
@@ -42,31 +69,31 @@ const ProjectCard = ({ id, title, image, description }: ProjectCardProps) => {
           src={image}
           alt={title}
           className={clsx(
-            'project-image w-full',
+            'project-image h-[340px]',
             isOdd ? 'rounded-tl-lg' : 'rounded-tr-lg'
           )}
         />
         <div
           className={clsx(
-            'backdrop-light  bg-radial-gradient absolute -top-1/3 md:-top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            'backdrop-light bg-radial-gradient absolute -top-1/3 md:-top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
             isOdd ? 'sm:right-10' : 'sm:left-10'
           )}
         />
         <div
           className={clsx(
-            'backdrop-light  bg-radial-gradient absolute -top-1/3 md:-top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            'backdrop-light bg-radial-gradient absolute -top-1/3 md:-top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
             isOdd ? 'sm:right-10' : 'sm:left-10'
           )}
         />
         <div
           className={clsx(
-            'backdrop-light  bg-radial-gradient absolute top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            'backdrop-light bg-radial-gradient absolute top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
             isOdd ? 'sm:right-10' : 'sm:left-10'
           )}
         />
         <div
           className={clsx(
-            'backdrop-light  bg-radial-gradient absolute top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
+            'backdrop-light bg-radial-gradient absolute top-1/2 -z-10 h-full w-3/4 max-w-[500px]',
             isOdd ? 'sm:right-10' : 'sm:left-10'
           )}
         />
@@ -76,3 +103,4 @@ const ProjectCard = ({ id, title, image, description }: ProjectCardProps) => {
 };
 
 export default ProjectCard;
+
