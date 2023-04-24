@@ -34,11 +34,14 @@ const Footer = () => {
             CC BY 4.0
           </a>
           .
+          <span className='block'>
+            Note that changes were applied to the design as needed.
+          </span>
           <a
             target='_blank'
             rel='noreferrer noopener'
             href='https://www.figma.com/community/file/1182197835889504018/Portfolio-Design'
-            className='design-link block text-primary-light font-medium'
+            className='design-link text-primary-light font-medium'
           >
             Figma Project Link
           </a>
