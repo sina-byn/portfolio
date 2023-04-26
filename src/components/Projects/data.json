@@ -3,7 +3,8 @@
     "id": 1,
     "title": "Horizon UI Admin Dashboard",
     "image": "/thumbnails/horizon-ui-dashboard.png",
-    "url": "https://horizon-ui-dashboard.vercel.app/",
+    "demoLink": "https://horizon-ui-dashboard.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/horizon-ui-dashboard",
     "description": "an admin dashboard built based on the free community version of the horizon-ui admin dashboard user interface on figma community including many features such as charts, tables, lists, calendar, marketplace, sign-in form with validation, full-page search, and etc.",
     "tags": [
       "react",
@@ -22,7 +23,8 @@
     "id": 2,
     "title": "Online Code Editor",
     "image": "/thumbnails/online-code-editor.png",
-    "url": "https://online-code-editor-two.vercel.app/",
+    "demoLink": "https://online-code-editor-two.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/online-code-editor",
     "description": "an online code editor which supports HTML, Css, and Javascript with features such as built-in javascript console, expandable and resizable text fields, fullscreen mode, and also a live mode so that you can see the results as you code them",
     "tags": [
       "react",
@@ -39,7 +41,8 @@
     "id": 3,
     "title": "All Things Colors",
     "image": "/thumbnails/all-things-colors.png",
-    "url": "https://all-things-colors.vercel.app/",
+    "demoLink": "https://all-things-colors.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/all-things-colors",
     "description": "a web application that provides you with different color utility tools to boost your speed and productivity - pre-defined gradients, random gradient generator, tints and shades generator, color palette generator, image palette extractor, and color mixer",
     "tags": [
       "react",
@@ -55,7 +58,8 @@
     "id": 4,
     "title": "Cryptoify",
     "image": "/thumbnails/cryptoify.png",
-    "url": "https://cryptoify.vercel.app/",
+    "demoLink": "https://cryptoify.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/cryptoify",
     "description": "a web application for you to check more than 300 crypto currencies including a responsive table for all screen sizes and also features like searching coins based on name or id, chart price changes table with different timeframes available, pagination and per-page options, and support for three major currencies (usd, eur, gbp)",
     "tags": [
       "react",

@@ -7,8 +7,9 @@ import Tag from './Tag';
 type ProjectCardProps = {
   id: number;
   title: string;
-  url?: string;
   image: string;
+  demoLink?: string;
+  githubLink?: string;
   description: string;
   tags: string[];
 };
@@ -16,8 +17,9 @@ type ProjectCardProps = {
 const ProjectCard = ({
   id,
   title,
-  url,
   image,
+  demoLink,
+  githubLink,
   description,
   tags,
 }: ProjectCardProps) => {
@@ -48,21 +50,35 @@ const ProjectCard = ({
             <Tag key={tag} title={tag} />
           ))}
         </div>
-        {url !== undefined && url.length > 0 && (
-          <a
-            href={url}
-            target='_blank'
-            rel='noreferrer noopener'
-            className='demo-link w-fit bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
-          >
-            View Demo
-          </a>
-        )}
+        <div className='project-links flex flex-wrap gap-2'>
+          {githubLink !== undefined && githubLink.length > 0 && (
+            <a
+              href={githubLink}
+              target='_blank'
+              rel='noreferrer noopener'
+              className='github-repo-link w-fit bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
+            >
+              View Github Repo
+            </a>
+          )}
+          {demoLink !== undefined && demoLink.length > 0 && (
+            <a
+              href={demoLink}
+              target='_blank'
+              rel='noreferrer noopener'
+              className='demo-link w-fit bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
+            >
+              View Demo
+            </a>
+          )}
+        </div>
       </section>
       <figure
         className={clsx(
           'image-container col-span-6 row-start-1 row-end-7 relative h-fit bg-purple rounded-md pt-4 md:pt-8',
-          isOdd ? 'col-start-7 pl-4 md:pl-10 lg:pl-14' : 'col-start-1 pr-4 md:pr-10 lg:pr-14'
+          isOdd
+            ? 'col-start-7 pl-4 md:pl-10 lg:pl-14'
+            : 'col-start-1 pr-4 md:pr-10 lg:pr-14'
         )}
       >
         <img
