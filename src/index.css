@@ -6,6 +6,15 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: #440661;
+}
+
 .bg-radial-gradient {
   background: -o-radial-gradient(center, ellipse, #763caca7, #320f8500 60%);
   background: radial-gradient(ellipse at center, #763caca7, #320f8500 60%);
@@ -13,16 +22,6 @@ html {
 
 .bg-glassy-primary {
   /* From https://css.glass */
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(rgba(104, 59, 147, 0.435)),
-    color-stop(rgba(104, 59, 147, 0.335)),
-    color-stop(rgba(104, 59, 147, 0.255)),
-    color-stop(rgba(104, 59, 147, 0.415)),
-    to(rgba(104, 59, 147, 0.465))
-  );
   background: -o-linear-gradient(
     right,
     rgba(104, 59, 147, 0.435),
@@ -30,6 +29,15 @@ html {
     rgba(104, 59, 147, 0.255),
     rgba(104, 59, 147, 0.415),
     rgba(104, 59, 147, 0.465)
+  );
+  background: -webkit-gradient(
+    linear,
+    right top, left top,
+    from(rgba(104, 59, 147, 0.435)),
+    color-stop(rgba(104, 59, 147, 0.335)),
+    color-stop(rgba(104, 59, 147, 0.255)),
+    color-stop(rgba(104, 59, 147, 0.415)),
+    to(rgba(104, 59, 147, 0.465))
   );
   background: linear-gradient(
     -90deg,
@@ -45,21 +53,20 @@ html {
 
 .bg-glassy-secondary {
   /* From https://css.glass */
-  background: -webkit-gradient(
-    linear,
-    right top,
-    left top,
-    from(rgba(104, 59, 147, 0.435)),
-    color-stop(rgba(104, 59, 147, 0.335)),
-    color-stop(rgba(104, 59, 147, 0.415)),
-    to(rgba(104, 59, 147, 0.465))
-  );
   background: -o-linear-gradient(
     right,
     rgba(104, 59, 147, 0.435),
     rgba(104, 59, 147, 0.335),
     rgba(104, 59, 147, 0.415),
     rgba(104, 59, 147, 0.465)
+  );
+  background: -webkit-gradient(
+    linear,
+    right top, left top,
+    from(rgba(104, 59, 147, 0.435)),
+    color-stop(rgba(104, 59, 147, 0.335)),
+    color-stop(rgba(104, 59, 147, 0.415)),
+    to(rgba(104, 59, 147, 0.465))
   );
   background: linear-gradient(
     -90deg,
@@ -80,4 +87,5 @@ html {
     -webkit-backdrop-filter: blur(5px);
   }
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjO0FBQ2Qsb0JBQW9CO0FBQ3BCLG1CQUFtQjs7QUFFbkI7RUFDRSx1QkFBQTtBQUNGOztBQUVBO0VBQ0UseUVBQXlFO0VBQ3pFLHdFQUF3RTtBQUMxRTs7QUFFQTtFQUNFLDJCQUEyQjtFQUMzQjs7Ozs7Ozs7R0FPQztFQVBEOzs7Ozs7O0dBT0M7RUFQRDs7Ozs7OztHQU9DO0VBQ0QsbUNBREM7VUFDRCwyQkFEQztBQUVIOztBQUVBO0VBQ0UsMkJBQTJCO0VBQzNCOzs7Ozs7O0dBTUM7RUFORDs7Ozs7O0dBTUM7RUFORDs7Ozs7O0dBTUM7RUFDRCxtQ0FBMkI7VUFBM0IsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0U7SUFoQkEsMkJBQTJCO0lBQzNCLHFDQUFtQztJQUNyQywwQkFBQTtJQWtCSSxrQ0FBa0M7RUFoQnRDO0FBa0JBIiwiZmlsZSI6ImluZGV4LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIkB0YWlsd2luZCBiYXNlO1xuQHRhaWx3aW5kIGNvbXBvbmVudHM7XG5AdGFpbHdpbmQgdXRpbGl0aWVzO1xuXG4uYmctcmFkaWFsLWdyYWRpZW50IHtcbiAgYmFja2dyb3VuZDogLW8tcmFkaWFsLWdyYWRpZW50KGNlbnRlciwgZWxsaXBzZSwgIzc2M2NhY2E3LCAjMzIwZjg1MDAgNjAlKTtcbiAgYmFja2dyb3VuZDogcmFkaWFsLWdyYWRpZW50KGVsbGlwc2UgYXQgY2VudGVyLCAjNzYzY2FjYTcsICMzMjBmODUwMCA2MCUpO1xufVxuIl19 */
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImluZGV4LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSxjQUFjO0FBQ2Qsb0JBQW9CO0FBQ3BCLG1CQUFtQjs7QUFFbkI7RUFDRSx1QkFBQTtBQUNGOztBQUVBO0VBQ0UsVUFBQTtBQUNGOztBQUVBO0VBQ0Esa0JBQUE7RUFDRSxtQkFBQTtBQUNGOztBQUVBO0VBQ0UseUVBQXlFO0VBQ3pFLHdFQUF3RTtBQUMxRTs7QUFFQTtFQUNFLDJCQURDO0VBWUQ7Ozs7Ozs7R0FPQztFQWpCSDs7Ozs7Ozs7R0F5Qkc7RUF6Qkg7Ozs7Ozs7R0F5Qkc7RUFDRCxtQ0FBbUM7RUFDbkMsMkJBQTJCO0FBQzdCOztBQUVBO0VBQ0UsMkJBQTJCO0VBVTNCOzs7Ozs7R0FNQztFQWpDSDs7Ozs7OztHQVhBO0VBV0E7Ozs7OztHQVhBO0VBa0JBLG1DQUFBO0VBbUNFLDJCQUEyQjtBQUM3Qjs7QUFFQTtFQUNFO0lBQ0UsMkJBQTJCO0lBQzNCLHFDQUFxQztJQUNyQywwQkFBMEI7SUFDMUIsa0NBQWtDO0VBQ3BDO0FBQ0YiLCJmaWxlIjoiaW5kZXguY3NzIiwic291cmNlc0NvbnRlbnQiOlsiQHRhaWx3aW5kIGJhc2U7XG5AdGFpbHdpbmQgY29tcG9uZW50cztcbkB0YWlsd2luZCB1dGlsaXRpZXM7XG5cbi5iZy1yYWRpYWwtZ3JhZGllbnQge1xuICBiYWNrZ3JvdW5kOiAtby1yYWRpYWwtZ3JhZGllbnQoY2VudGVyLCBlbGxpcHNlLCAjNzYzY2FjYTcsICMzMjBmODUwMCA2MCUpO1xuICBiYWNrZ3JvdW5kOiByYWRpYWwtZ3JhZGllbnQoZWxsaXBzZSBhdCBjZW50ZXIsICM3NjNjYWNhNywgIzMyMGY4NTAwIDYwJSk7XG59XG4iXX0= */
