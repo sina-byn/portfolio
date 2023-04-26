@@ -1,26 +1,42 @@
 [
   {
-    "name": "javascript",
-    "image": "/js.png"
+    "name": "Next.js",
+    "image": "/logos/nextjs.svg"
   },
   {
-    "name": "ts",
-    "image": "/js.png"
+    "name": "React.js",
+    "image": "/logos/reactjs.svg"
   },
   {
-    "name": "sass",
-    "image": "/js.png"
+    "name": "TypeScript",
+    "image": "/logos/ts.svg"
   },
   {
-    "name": "less",
-    "image": "/js.png"
+    "name": "JavaScript",
+    "image": "/logos/js.svg"
   },
   {
-    "name": "sth",
-    "image": "/js.png"
+    "name": "Tailwind CSS",
+    "image": "/logos/tailwindcss.svg"
   },
   {
-    "name": "nth",
-    "image": "/js.png"
+    "name": "Sass",
+    "image": "/logos/sass.svg"
+  },
+  {
+    "name": "CSS",
+    "image": "/logos/css.svg"
+  },
+  {
+    "name": "HTML",
+    "image": "/logos/html.svg"
+  },
+  {
+    "name": "Github",
+    "image": "/logos/github.svg"
+  },
+  {
+    "name": "Git",
+    "image": "/logos/git.svg"
   }
 ]

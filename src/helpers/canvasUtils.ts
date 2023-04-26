@@ -30,6 +30,7 @@ const drawCurve = (
   ctx.moveTo(start.x, start.y);
   ctx.bezierCurveTo(cp.x, cp.y, cp.x, cp.y, end.x, end.y);
   ctx.strokeStyle = gradient;
+  ctx.lineWidth = 1.5;
   ctx.stroke();
 };
 

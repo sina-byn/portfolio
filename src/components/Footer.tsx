@@ -46,6 +46,140 @@ const Footer = () => {
             Figma Project Link
           </a>
         </p>
+        <div className='logo-attributes text-xs mt-4'>
+          <span>Attributes:</span>
+          <span className='attribute-link block'>
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com/icons/javascript'
+              className='text-primary-light text-xs font-medium mr-1'
+            >
+              Free Javascript Icon
+            </a>
+            by
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com/contributors/icon-mafia'
+              className='text-primary-light text-xs font-medium mx-1'
+            >
+              Icon Mafia
+            </a>
+            on
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com'
+              className='text-primary-light text-xs font-medium ml-1'
+            >
+              IconScout
+            </a>
+          </span>
+          <span className='attribute-link block'>
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              className='text-primary-light text-xs font-medium mr-1'
+              href='https://iconscout.com/icons/css3'
+            >
+              Free Css3 Icon
+            </a>
+            by
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              className='text-primary-light font-medium ml-1'
+              href='https://iconscout.com/contributors/icon-mafia'
+            >
+              Icon Mafia
+            </a>
+          </span>
+          <span className='attribute-link block'>
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              className='text-primary-light font-medium mr-1'
+              href='https://iconscout.com/icons/html5'
+            >
+              Free Html5 Icon
+            </a>
+            by
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              className='text-primary-light font-medium mx-1'
+              href='https://iconscout.com/contributors/icon-mafia'
+            >
+              Icon Mafia
+            </a>
+            on
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com'
+              className='text-primary-light text-xs font-medium ml-1'
+            >
+              IconScout
+            </a>
+          </span>
+          <span className='attribute-link block'>
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com/icons/git'
+              className='text-primary-light text-xs font-medium mr-1'
+            >
+              Free Git Icon
+            </a>
+            by
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com/contributors/icon-mafia'
+              className='text-primary-light text-xs font-medium mx-1'
+            >
+              Icon Mafia
+            </a>
+            on
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com'
+              className='text-primary-light text-xs font-medium ml-1'
+            >
+              IconScout
+            </a>
+          </span>
+          <span className='attribute-link block'>
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com/icons/github'
+              className='text-primary-light text-xs font-medium mr-1'
+            >
+              Free Github Icon
+            </a>
+            by
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com/contributors/unicons'
+              className='text-primary-light text-xs font-medium mx-1'
+            >
+              Unicons Font
+            </a>
+            on{' '}
+            <a
+              target='_blank'
+              rel='noreferrer noopener'
+              href='https://iconscout.com'
+              className='text-primary-light text-xs font-medium ml-1'
+            >
+              IconScout
+            </a>
+          </span>
+        </div>
       </Container>
       <div className='copyright bg-primary text-xs text-center mt-8 py-2'>
         Copyright &copy; 2023 | Sina Bayandorian
