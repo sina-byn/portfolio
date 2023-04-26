@@ -44,7 +44,7 @@ const TechStack = () => {
           height={350}
           className='hidden sm:block absolute inset-0'
         />
-        <div className='tech-pills-container grid grid-cols-4 sm:grid-cols-5 justify-items-center gap-4 sm:h-[300px] mb-10 sm:mb-0'>
+        <div className='tech-pills-container flex flex-wrap justify-center gap-4 sm:h-[300px] mb-10 sm:mb-0'>
           {stackData.map((tech, idx) => (
             <TechPill
               key={tech.name}
