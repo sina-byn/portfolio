@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import clsx from 'clsx';
 
 // * components
@@ -23,7 +24,25 @@ const ProjectCard = ({
   description,
   tags,
 }: ProjectCardProps) => {
+  const imageContainerRef = useRef<HTMLElement>(null);
+  const imageRef = useRef<HTMLImageElement>(null);
   const isOdd = id % 2 === 1;
+
+  const imageLoadHandler = () => {
+    imageContainerRef.current!.style.height = 'fit-content';
+    imageRef.current!.style.display = 'initial';
+  };
+
+  useEffect(() => {
+    const container = imageContainerRef.current!;
+    const image = imageRef.current!;
+    const ratio = image.naturalWidth / image.naturalHeight;
+    const containerWidth = parseInt(
+      getComputedStyle(container).getPropertyValue('width')
+    );
+
+    container.style.height = containerWidth / ratio + 'px';
+  }, [imageRef.current, imageContainerRef.current]);
 
   return (
     <article className='project-card flex flex-col gap-y-3 md:gap-y-6 md:grid grid-cols-12 grid-rows-6 h-fit'>
@@ -53,8 +72,8 @@ const ProjectCard = ({
         <div className='project-links flex flex-wrap gap-2'>
           {githubLink !== undefined && githubLink.length > 0 && (
             <a
-              href={githubLink}
               target='_blank'
+              href={githubLink}
               rel='noreferrer noopener'
               className='github-repo-link w-fit bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
             >
@@ -74,6 +93,7 @@ const ProjectCard = ({
         </div>
       </section>
       <figure
+        ref={imageContainerRef}
         className={clsx(
           'image-container col-span-6 row-start-1 row-end-7 relative h-fit bg-purple rounded-md pt-4 md:pt-8',
           isOdd
@@ -84,6 +104,9 @@ const ProjectCard = ({
         <img
           src={image}
           alt={title}
+          loading='lazy'
+          ref={imageRef}
+          onLoad={imageLoadHandler}
           className={clsx(
             'project-image w-full',
             isOdd
