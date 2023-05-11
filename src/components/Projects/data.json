@@ -71,5 +71,24 @@
       "postcss",
       "autoprefixer"
     ]
+  },
+  {
+    "id": 5,
+    "title": "type-it-fast",
+    "image": "/thumbnails/type-it-fast.png",
+    "demoLink": "https://type-it-fast.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/type-it-fast",
+    "description": "a website to test your typing skills and get certified ASAP - including instant certificate generation using jspdf and html2pdf.js, random sentences fetched from type.fit random quotes api, etc.",
+    "tags": [
+      "css",
+      "html",
+      "javascript",
+      "html2pdf.js",
+      "jspdf",
+      "postcss",
+      "autoprefixer",
+      "desktop-only website",
+      "object-oriented and functional"
+    ]
   }
 ]
