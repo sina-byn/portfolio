@@ -56,6 +56,34 @@
   },
   {
     "id": 4,
+    "title": "Sorting Vis",
+    "image": "/thumbnails/sorting-vis.png",
+    "demoLink": "https://sorting-vis-sina-byn.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/sorting-vis",
+    "description": "sorting-viz provides an interactive and educational experience, allowing users to grasp the inner workings of various sorting algorithms with ease.",
+    "tags": [
+      "javascript",
+      "sorting algorithms",
+      "algorithm visualization",
+      "vite",
+      "tailwind-css",
+      "postcss",
+      "autoprefixer",
+      "terser",
+      "clsx"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "regex-it",
+    "image": "/thumbnails/regex-it.png",
+    "demoLink": "https://regex-it.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/regex-it",
+    "description": "a simple clone of the RegEx Pal website from Dan's Tools to test your JavaScript regular expressions",
+    "tags": ["react", "javascript", "tailwind-css", "codemirror", "postcss", "autoprefixer", "clsx"]
+  },
+  {
+    "id": 6,
     "title": "Cryptoify",
     "image": "/thumbnails/cryptoify.png",
     "demoLink": "https://cryptoify.vercel.app/",
@@ -73,7 +101,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "type-it-fast",
     "image": "/thumbnails/type-it-fast.png",
     "demoLink": "https://type-it-fast.vercel.app/",
