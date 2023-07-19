@@ -11,6 +11,7 @@ type ProjectCardProps = {
   image: string;
   demoLink?: string;
   githubLink?: string;
+  packageLink?: string;
   description: string;
   tags: string[];
 };
@@ -21,6 +22,7 @@ const ProjectCard = ({
   image,
   demoLink,
   githubLink,
+  packageLink,
   description,
   tags,
 }: ProjectCardProps) => {
@@ -32,6 +34,7 @@ const ProjectCard = ({
     imageContainerRef.current!.style.height = 'fit-content';
     imageRef.current!.style.display = 'initial';
   };
+  console.log(packageLink);
 
   useEffect(() => {
     const container = imageContainerRef.current!;
@@ -69,7 +72,7 @@ const ProjectCard = ({
             <Tag key={tag} title={tag} />
           ))}
         </div>
-        <div className='project-links flex flex-wrap gap-2'>
+        <div className='project-links flex flex-col sm:flex-row flex-wrap gap-2'>
           {githubLink !== undefined && githubLink.length > 0 && (
             <a
               target='_blank'
@@ -78,6 +81,16 @@ const ProjectCard = ({
               className='github-repo-link w-fit bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
             >
               View Github Repo
+            </a>
+          )}
+          {packageLink !== undefined && packageLink.length > 0 && (
+            <a
+              target='_blank'
+              href={packageLink}
+              rel='noreferrer noopener'
+              className='github-repo-link w-fit bg-primary-light/20 text-sm border border-transparent rounded-lg hover:border-white/50 active:scale-95 transition-all py-2 px-4'
+            >
+              View npm Package
             </a>
           )}
           {demoLink !== undefined && demoLink.length > 0 && (

@@ -15,9 +15,10 @@ const Projects = () => {
           key={proj.id}
           id={proj.id}
           title={proj.title}
-          demoLink={proj.demoLink}
           image={proj.image}
+          demoLink={proj.demoLink}
           githubLink={proj.githubLink}
+          packageLink={proj.packageLink}
           description={proj.description}
           tags={proj.tags}
         />
