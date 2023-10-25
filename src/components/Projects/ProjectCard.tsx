@@ -34,15 +34,12 @@ const ProjectCard = ({
     imageContainerRef.current!.style.height = 'fit-content';
     imageRef.current!.style.display = 'initial';
   };
-  console.log(packageLink);
 
   useEffect(() => {
     const container = imageContainerRef.current!;
     const image = imageRef.current!;
     const ratio = image.naturalWidth / image.naturalHeight;
-    const containerWidth = parseInt(
-      getComputedStyle(container).getPropertyValue('width')
-    );
+    const containerWidth = parseInt(getComputedStyle(container).getPropertyValue('width'));
 
     container.style.height = containerWidth / ratio + 'px';
   }, [imageRef.current, imageContainerRef.current]);
@@ -64,9 +61,7 @@ const ProjectCard = ({
           isOdd ? 'col-start-1' : 'col-start-6 md:items-end'
         )}
       >
-        <p className='description bg-glassy-primary rounded-2xl p-6 shadow-sm'>
-          {description}
-        </p>
+        <p className='description bg-glassy-primary rounded-2xl p-6 shadow-sm'>{description}</p>
         <div className='tags flex flex-wrap gap-2'>
           {tags.map(tag => (
             <Tag key={tag} title={tag} />
@@ -109,9 +104,7 @@ const ProjectCard = ({
         ref={imageContainerRef}
         className={clsx(
           'image-container col-span-6 row-start-1 row-end-7 relative h-fit bg-purple rounded-md pt-4 md:pt-8',
-          isOdd
-            ? 'col-start-7 pl-4 md:pl-10 lg:pl-14'
-            : 'col-start-1 pr-4 md:pr-10 lg:pr-14'
+          isOdd ? 'col-start-7 pl-4 md:pl-10 lg:pl-14' : 'col-start-1 pr-4 md:pr-10 lg:pr-14'
         )}
       >
         <img
@@ -122,9 +115,7 @@ const ProjectCard = ({
           onLoad={imageLoadHandler}
           className={clsx(
             'project-image w-full',
-            isOdd
-              ? 'rounded-tl-lg rounded-br-lg'
-              : 'rounded-tr-lg rounded-bl-lg'
+            isOdd ? 'rounded-tl-lg rounded-br-lg' : 'rounded-tr-lg rounded-bl-lg'
           )}
         />
         <div
