@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Horizon UI Admin Dashboard",
     "image": "/thumbnails/horizon-ui-dashboard.png",
-    "demoLink": "https://horizon-ui-dashboard.vercel.app/",
+    "demoLink": "https://horizon-ui-dashboard.iran.liara.run/",
     "githubLink": "https://github.com/sina-byn/horizon-ui-dashboard",
     "description": "an admin dashboard built based on the free community version of the horizon-ui admin dashboard user interface on figma community including many features such as charts, tables, lists, calendar, marketplace, sign-in form with validation, full-page search, and etc.",
     "tags": [
@@ -21,6 +21,75 @@
   },
   {
     "id": 2,
+    "title": "Comment Eraser",
+    "image": "/thumbnails/comment-eraser.png",
+    "githubLink": "https://github.com/sina-byn/comment-eraser",
+    "packageLink": "https://www.npmjs.com/package/comment-eraser",
+    "description": "comment-eraser is a Node.js package that removes comments from JavaScript files efficiently. It offers customizable options for tailoring the comment removal process and includes an interactive mode for selective file cleanup. Overall, comment-eraser simplifies and streamlines code cleanup tasks.",
+    "tags": [
+      "node.js",
+      "javascript",
+      "npm-package",
+      "comment-remover",
+      "code-cleanup",
+      "interactive-mode",
+      "utility-library"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "PixLab Express",
+    "image": "/thumbnails/pixlab-express.png",
+    "demoLink": "https://pixlab-express.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/pixlab-express",
+    "description": "PixLab Express is a straightforward and intuitive online image editor created using React, Mantine-UI, and TailwindCSS. It allows you to effortlessly add filters and make changes to your images with ease. Elevate your photo editing skills with PixLab Express!",
+    "tags": [
+      "javascript",
+      "react",
+      "tailwind-css",
+      "mantine-ui",
+      "react-zoom-pan-pinch",
+      "tabler-icons",
+      "vite"
+    ]
+  },
+  {
+    "id": 4,
+    "title": "md2readme",
+    "image": "/thumbnails/md2readme.png",
+    "demoLink": "https://md2readme.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/md2readme",
+    "description": "effortlessly preview your GitHub Flavored Markdown (GFM) as you type it with auto-save to local-storage and support for different github themes. Enjoy hassle-free markdown formatting!",
+    "tags": [
+      "javascript",
+      "react",
+      "tailwind-css",
+      "monaco-editor",
+      "dompurify",
+      "showdown",
+      "vite"
+    ]
+  },
+  {
+    "id": 5,
+    "title": "OCR-it",
+    "image": "/thumbnails/ocr-it.png",
+    "demoLink": "https://ocr-it.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/ocr-it",
+    "description": "optical character recognition simplified! Upload your image, press \"Extract,\" and let OCR-it work its magic - built on top of tesseract.js",
+    "tags": [
+      "typescript",
+      "react",
+      "tailwind-css",
+      "mantine-ui",
+      "react-hot-toast",
+      "tesseract.js",
+      "iconoir-react",
+      "vite"
+    ]
+  },
+  {
+    "id": 6,
     "title": "Online Code Editor",
     "image": "/thumbnails/online-code-editor.png",
     "demoLink": "https://online-code-editor-two.vercel.app/",
@@ -38,7 +107,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 7,
     "title": "All Things Colors",
     "image": "/thumbnails/all-things-colors.png",
     "demoLink": "https://all-things-colors.vercel.app/",
@@ -55,7 +124,35 @@
     ]
   },
   {
-    "id": 4,
+    "id": 8,
+    "title": "Sorting Vis",
+    "image": "/thumbnails/sorting-vis.png",
+    "demoLink": "https://sorting-vis-sina-byn.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/sorting-vis",
+    "description": "sorting-viz provides an interactive and educational experience, allowing users to grasp the inner workings of various sorting algorithms with ease.",
+    "tags": [
+      "javascript",
+      "sorting algorithms",
+      "algorithm visualization",
+      "vite",
+      "tailwind-css",
+      "postcss",
+      "autoprefixer",
+      "terser",
+      "clsx"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "regex-it",
+    "image": "/thumbnails/regex-it.png",
+    "demoLink": "https://regex-it.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/regex-it",
+    "description": "a simple clone of the RegEx Pal website from Dan's Tools to test your JavaScript regular expressions",
+    "tags": ["react", "javascript", "tailwind-css", "codemirror", "postcss", "autoprefixer", "clsx"]
+  },
+  {
+    "id": 10,
     "title": "Cryptoify",
     "image": "/thumbnails/cryptoify.png",
     "demoLink": "https://cryptoify.vercel.app/",
@@ -71,5 +168,33 @@
       "postcss",
       "autoprefixer"
     ]
+  },
+  {
+    "id": 11,
+    "title": "type-it-fast",
+    "image": "/thumbnails/type-it-fast.png",
+    "demoLink": "https://type-it-fast.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/type-it-fast",
+    "description": "a website to test your typing skills and get certified ASAP - including instant certificate generation using jspdf and html2pdf.js, random sentences fetched from type.fit random quotes api, etc.",
+    "tags": [
+      "css",
+      "html",
+      "javascript",
+      "html2pdf.js",
+      "jspdf",
+      "postcss",
+      "autoprefixer",
+      "desktop-only website",
+      "object-oriented and functional"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "lorem ipsum generator",
+    "image": "/thumbnails/lorem-ipsum-generator.png",
+    "demoLink": "https://lorem-ipsum-generator-sina-byn.vercel.app/",
+    "githubLink": "https://github.com/sina-byn/lorem-ipsum-generator",
+    "description": "Generating Lorem Ipsums made easy! Choose your desired unit, enter the count, and simply click \"Generate\"! Whether you need words, paragraphs, or even bytes, we've got you covered!",
+    "tags": ["html", "css", "javascript", "bulma-css"]
   }
 ]
